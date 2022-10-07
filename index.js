@@ -44,11 +44,24 @@ function Navbar() {
 }
 
 function Hero() {
-  return <h1 classNameNameName="Header">Hero Section</h1>;
+  return <h1 className="d-flex text-center">React JS<i class="fa fa-jsfiddle" aria-hidden="true"></i></h1>;
+}
+
+function MainContent(){
+    return(
+        <div>
+        <h2>Main Features of React</h2>
+        <ul>
+            <li>Composable</li>
+            <li>JSX</li>
+            <li>Declerative</li>
+        </ul>
+        </div>
+    );
 }
 
 function Footer() {
-  return <h2>Footer Section</h2>;
+  return <p>Created by LTE Member @ 2022, All right reserved</p>;
 }
 
 function Page(){
@@ -56,6 +69,7 @@ function Page(){
         <div>
             <Navbar/>
             <Hero/>
+            <MainContent/>
             <Footer/>
         </div>
     )
