@@ -11,8 +11,12 @@ root.render(<h1>Hello World</h1>);
 // root.render(JSXElement);
 
 
-const Header = (something) => {
-  console.log(something);
+const Header = (props) => {
+  console.log(props);
+  const {region, children} =props;
+  console.log("region",region);
+  console.log("children", children);
+
   return <h1>Header Component</h1>;
 };
 const HeaderElement = <Header />;
